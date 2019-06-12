@@ -9,6 +9,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -100,20 +101,21 @@ public class choose_division extends AppCompatActivity
             }
         });
 
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.app_bar_choose_division);
-//        mBtn = (Button) findViewById(R.id.confirm);
-//        mBtn.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(choose_division.this,.class);   //連結選擇科別與醫生時段之button, for阿寶的時段及醫生
+
+
+
+        mBtn = (Button) findViewById(R.id.confirm);
+        mBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(choose_division.this,visit.class);   //連結選擇科別與醫生時段之button, for阿寶的時段及醫生
 //                Bundle bundle = new Bundle();
 //                bundle.putString("division",str);
 //                intent.putExtras(bundle);
-//                startActivity(intent);
-//
-//            }
-//        });
+                startActivity(intent);
+
+            }
+        });
 
 
     }

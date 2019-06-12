@@ -110,4 +110,31 @@ public class fields {
     }
 
 
+
+
+
+    //visit_time
+
+    private String date;
+    private int time;
+    private String[] doctor_id;
+    private String[] reservation_id;
+
+    public String getDate() {
+        return date;
+    }
+
+    public int getTime() {
+        return time;
+    }
+
+    public String[] getDoctor_id() {
+        return doctor_id;
+    }
+
+    public String[] getReservation_id() {
+        return reservation_id;
+    }
+
+
 }

@@ -14,6 +14,12 @@ public interface MyAPIService {
 
     //可以使用我的金鑰，一樣能抓得到資料庫值，不用特地改成自己的金鑰
 
+    @GET("visit_time?view=Grid%20view&api_key=keycPi0WBRNXVMtiW")
+    Call<visit_time> getVis();
+
+    @GET("visit_time/{id}?api_key=keyxoPJrsRszv63ZS")
+    Call<Req> getVisById(@Path("id") String id);
+
     //  資料表/顯示條件/金鑰  傳回所有病人紀錄
     @GET("patient?view=Grid%20view&api_key=keycPi0WBRNXVMtiW")
     Call<patient> getPat();
